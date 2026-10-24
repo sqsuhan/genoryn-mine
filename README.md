@@ -102,18 +102,10 @@ GNR_POOL=tls://gnr.ariabrain.com:3351 bash genoryn-mine.sh start
 GNR_HOME=/opt/genoryn bash genoryn-mine.sh setup  # install dir (default ~/genoryn)
 ```
 
-Install a **different official release** only after you copy its SHA-256 from the [release page](https://github.com/genoryn/genoryn/releases):
+The script pins official miner **v1.2.0** and checks its SHA-256 on download. To install another [release](https://github.com/genoryn/genoryn/releases), copy that zip’s hash from the release page:
 
 ```bash
-GNR_VERSION=1.2.0 GNR_SHA256=94b857f7f1bf04b4d5f894e2f0b6ffbfaf2a3a5bb62a8b53cb0e2eb9f7dc920d \
-  bash genoryn-mine.sh install
-```
-
-Pinned default: **v1.2.0**  
-SHA-256 of `genoryn-1.2.0-mainnet-linux-x86_64.zip`:
-
-```text
-94b857f7f1bf04b4d5f894e2f0b6ffbfaf2a3a5bb62a8b53cb0e2eb9f7dc920d
+GNR_VERSION=<version> GNR_SHA256=<hash from the release page> bash genoryn-mine.sh install
 ```
 
 ## Pool and payouts
