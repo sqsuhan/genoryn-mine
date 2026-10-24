@@ -1,0 +1,20 @@
+# never commit wallets, logs, or miner binaries
+*.gnr
+*.log
+wallet.gnr
+address.txt
+miner.pid
+run-miner.sh
+
+# local install tree if someone runs the script inside the clone
+genoryn-*-mainnet-linux-x86_64/
+current
+dl/
+.verified
+
+# editors / OS
+.DS_Store
+*.swp
+*~
+.idea/
+.vscode/
